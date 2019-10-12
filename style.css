@@ -1,0 +1,340 @@
+html{
+    box-sizing: border-box;
+   
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+#container{
+    width:1300px;
+    margin:auto;
+}
+#body{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+hr{
+   width:1300px;
+   height: 1px;
+   background: #000000;
+}
+/* HEADER AND SEARCH */
+/* ///////////////// */
+
+
+#bar{
+    display: flex;
+    background: white ;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+#et a:link{
+    text-decoration: none;
+    color: #ec531c;
+    font-size: 40px;
+    margin: 0 10px 0 0px;
+    font-weight: 100;
+}
+
+#searchBar{
+    background: #e5e5e5;
+    height: 50px;
+    width: 825px;
+    margin:0px 5px;
+    align-self: center;
+    color:black;
+    border-radius: 35px;
+    font-size: 18px;
+    text-indent: 20px;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+#searchBar:focus{
+   border:1px black solid;
+   background: white;
+    transition: 1s ease-in-out 
+}
+#sideIcons{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto; 
+    align-items: center;
+    padding:0px 0px 0 30px;
+}
+
+#sell, #reg{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 0px 6px;
+}
+a:link,a:visited{
+    color: black;
+    text-decoration: none;
+}
+#sign{
+    margin: 0 15px;
+    background: none;
+    width: 75px;
+    height: 35px;
+    font-size: 16px;
+    border: solid 1px black;
+    border-radius: 3px;
+}
+#carthop{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    border-left: 1px solid #eeeeee; 
+}
+#carthop:hover{
+    color: grey;
+}
+#cart{
+margin: 0;
+ width: 23px;
+ height:23px;
+ align-self: auto;
+}
+#car{
+    margin:0;
+    align-self: auto;
+}
+.carlink:link{
+    text-decoration: none;
+    color:#5b5b5b;
+}
+
+#cart:hover{
+    color: #000000;
+
+}
+#check1{
+    align-items: center;
+}
+
+/* SUB MENU & BUBBLES */
+/* ////////////////// */
+/* ////////////////// */
+#subMenu p:hover {
+    text-decoration: underline;
+}
+
+#subMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000000;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#subMenu  p{
+    padding: 0px 18px;
+    margin: 0px 5px;
+}
+
+#subMenu a:link{
+    text-decoration: none;
+    color: #000000;
+}
+#gift{
+    padding: 3px;
+    font-size: 15px;
+    margin: 0;
+}
+.wc,.wg,.wb,.ws,.wst,.w,.s,.wd,.b,.be{
+    margin: 0px 5px 0 0;
+    background: #f7936f; 
+    border-radius: 30px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 13px;
+}
+#bubblelist{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+#bubblelist a:link{
+    text-decoration: none;
+    color: black;
+}
+#bubblelist li:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.02);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/* ASIDE COLUMN  */
+/* ///////////// */
+/* ////////////// */
+
+ #cata{
+    margin: 0;
+}
+#cats{
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+#cats li{
+    padding: 4px 0px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin: 0px 25px;
+}
+li{
+    list-style: none;
+}
+#cata li:hover{
+    text-decoration: underline;
+}
+ul{
+    padding: 0px;
+    color: #000000;
+}
+label{
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+#cats a:link, #sp a:link, #ship a:link, #mats a:link, #colors a:link, #personalize a:link, #occasions a:link, #holidays a:link,#location a:link, #prices a:link, #ordering a:link, #shipped a:link{
+    text-decoration: none;
+    color: #000000;
+    
+}
+#cata{
+    margin: 0;
+    align-items: flex-start;
+    cursor: pointer;
+}
+#cata > li{
+    align-items: center;
+}
+
+#plus a:link{
+    text-decoration: none;
+}
+h5{
+    margin: 0;
+}
+#low,#high{
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;   
+}
+input{
+    border: 2px solid grey;
+    align-content: center;
+}
+label{
+    align-content: center;
+}
+#shipbar{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    background: none;
+}
+
+#location{
+    width: 150px;
+}
+#loco:hover{
+    text-decoration: none;
+}
+.cus:hover{
+    text-decoration: underline;
+}
+.chevron{
+    display: inherit;
+}
+
+/* MAIN BODY */
+/* ///////// */
+/* //////// */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 10px;
+}
+.products{
+    cursor: pointer;
+    display: grid;
+}
+.products img{
+    width: 100%;
+    
+}
+#allproducts:hover{
+    text-decoration: none;
+}
+.products h3{
+    margin:0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+.products p {
+    margin: 0;
+}
+.descr{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.price{
+    font-size: 18px;
+    font-weight: 700;
+}
+.productlist{
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+   
+}
+.productlist > li > div > img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+   
+}
+#heart a{
+    color: white;
+    border:none;
+}
+#fullheart:hover #heart{
+    display: block;
+}
+.productlist #heart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    display: none;
+}
+.hearta{
+    font-size: 25px;
+}
+li #evenmore .specific:hover{
+    text-decoration: none !important;
+}
+#abovegrid{
+    display:flex;
+}
