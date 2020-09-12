@@ -18,7 +18,7 @@
                 <div id=sideIcons>
                     <p id="sell"><a href="#">Sell on Etsy</a></p>
                     <p id="reg"><a href="#">Register</a></p>
-                    <button id="sign"><a href="#">Sign in</a></button>
+                    <button id="sign" class="signon"><a id="signonbutton"href="#">Sign in</a></button>
                 <div id="carthop">
                     <a class="carlink"href="#">
                         <img src="./assets/cart.png" id="cart" >
@@ -27,7 +27,82 @@
                 </div>
             </div>
             <div id="subMenu">
-                    <p><a href="#">Jewelry & Accessories</a></p>
+                    <div class="jewelerydropdown">
+                    <p class="jewlery"><a href="#">Jewelry & Accessories</a></p>
+                    <div class="dropcontent">
+                        <a href="#" class="dbJewlery">All Jewelry & Accessories <i class="fa fa-arrow-right"></i></a>
+
+                        <div id="acccatagories">
+                            <a id="Accessories"href="#">Accessories <i id="chevy"class="fa fa-chevron-right"></i>
+                            </a>
+                            <div id="sories">
+                                    <a href="#" class="accheads">Hats & Caps</a>
+                                    <a href="#" class="accsub">Beanies & Winter Hats</a>
+                                    <a href="#" class="accheads">Hair Accessories</a>
+                                    <a href="#" class="accsub">Headbands</a>
+                                    <a href="#" class="accsub">Fascinators & Mini Hats</a>
+                                    <a href="#" class="accsub">Wreaths & Tiaras</a>
+                                    <a href="#" class="accheads">Sunglasses & Eyewear</a>
+                            </div>
+                        </div>
+                        <div id="bagstab">
+                            <a href="#">Bags & Purses <i id="chevy"class="fa fa-chevron-right"></i></a>
+                                <div id="bags">
+                                    <div class="hats">
+                                        <a href="#" class="accheads">Backpacks</a>
+                                    </div>
+                                    <div class="hats">
+                                        <a href="#" class="accheads">Handbags</a>
+                                        <a href="#" class="accsub">Clutches & Evening Bags</a>
+                                        <a href="#" class="accsub">Shoulder Bags</a>
+                                    </div>
+                                    <div class="hats">
+                                        <a href="#" class="accheads">Diaper Bags</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="neck">
+                            <a href="#">Necklaces <i id="chevy"class="fa fa-chevron-right"></i></a>
+                                <div id="necks">
+                                    <a href="#" class="accheads">Pendants</a>
+                                    <a href="#" class="accheads">Chokers</a>
+                                    <a href="#" class="accheads">Charm</a>
+                                    <a href="#" class="accheads">Charms Necklaces</a>
+                                    <a href="#" class="accheads">Crystal Necklaces</a>
+                                    <a href="#" class="accheads">Monogram & Name Necklaces</a>
+                                </div>
+                        </div>
+                        <div id="ring">
+                            <a href="#">Rings <i id="chevy"class="fa fa-chevron-right"></i></a>
+                                <div id="rings">
+                                    <a href="#" class="accheads">Stackable Rings</a>
+                                    <a href="#" class="accheads">Stable Rings</a>
+                                    <a href="#" class="accheads">Bands</a>
+                                    <a href="#" class="accheads">Stignate Rings</a>
+                                    <a href="#" class="accheads">Muti Stone Rings</a>
+                                    <a href="#" class="accheads">Solitare Rings</a>
+                                    <a href="#" class="accheads">Midi Rings</a>
+                                </div>
+                        </div>
+                        <div id="earring">
+                            <a href="#">Earings<i id="chevy"class="fa fa-chevron-right"></i></a>
+                                <div id="earrings">
+                                    <a href="#" class="accheads">Dangle & Drop Earrings</a>
+                                    <a href="#" class="accheads">Stud Earrings</a>
+                                    <a href="#" class="accheads">Hoop Earrings</a>
+                                    <a href="#" class="accheads">Chandlier Earrings</a>
+                                    <a href="#" class="accheads">Ear Jackets & Climbers</a>
+                                </div>
+                        </div>
+                        <div id="Bracelets">
+                        <a href="#">Bracelets <i id="chevy"class="fa fa-chevron-right"></i></a>
+                            <div id="bracelet">
+                            </div>
+                        </div>
+                        <a href="#">Body Jewelry <i id="chevy"class="fa fa-chevron-right"></i></a>
+                        <a class="dbJewlery" href="#">All Jewelry <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    </div>
                     <p><a href="#">Clothing & Shoes</a></p>
                     <p><a href="#">Home & Living</a></p>
                     <p><a href="#">Wedding & Party</a></p>
@@ -194,7 +269,7 @@
                         </li>
                         <li><a href="#"> <i id="plus"class="fa fa-plus"></i>  Show More</a></li>
                     </ul>
-                    <ul id="location">
+                    <ul id="locations">
                         <h5>Shop Location</h5>
                         <li>
                             <a href="#"><input type="radio" name="any" id="where">
@@ -206,10 +281,10 @@
                         </li>
                         <li id="loco" >
                             <a href="#">
-                            <input type="radio" name="loca">
-                            <label class="cus"name="loca">Custom</label>
-                            <input type="text" name="loca" id="location" placeholder="Enter Location">
+                            <input type="radio" name="locaa">
+                            <label class="cus"name="locaa">Custom</label>
                             </a>
+                            <input type="text" name="loca" id="location" placeholder="Enter Location">
                             <p class="chevron"><i class="fa fa-chevron-right"></i></p>
                         </li>
                     </ul>

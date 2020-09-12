@@ -6,7 +6,7 @@ html{
     box-sizing: inherit;
 }
 #container{
-    width:1300px;
+    width:1350px;
     margin:auto;
 }
 #body{
@@ -19,6 +19,8 @@ hr{
    height: 1px;
    background: #000000;
 }
+
+/* ///////////////// */
 /* HEADER AND SEARCH */
 /* ///////////////// */
 
@@ -54,7 +56,7 @@ hr{
 #searchBar:focus{
    border:1px black solid;
    background: white;
-    transition: 1s ease-in-out 
+    transition: 0.3s ease-in-out 
 }
 #sideIcons{
     display: flex;
@@ -81,7 +83,9 @@ a:link,a:visited{
     font-size: 16px;
     border: solid 1px black;
     border-radius: 3px;
+    color: white;
 }
+
 #carthop{
     display: flex;
     justify-content: center;
@@ -116,9 +120,11 @@ margin: 0;
     align-items: center;
 }
 
+/* ////////////////// */
 /* SUB MENU & BUBBLES */
 /* ////////////////// */
-/* ////////////////// */
+
+
 #subMenu p:hover {
     text-decoration: underline;
 }
@@ -178,22 +184,22 @@ margin: 0;
  #cata{
     margin: 0;
 }
-#cats{
-    color:black;
+
+h5{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
 }
 #cats li{
     padding: 4px 0px;
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif ;
+    font-size: 14px;
     margin: 0px 25px;
+    font-weight: 200;
 }
 li{
     list-style: none;
 }
-#cata li:hover{
+#cats li:hover, #sp li:hover, #ship li:hover, #mats li:hover, #colors li:hover,#personalize li:hover,#occasions li:hover, #holidays li:hover{
     text-decoration: underline;
 }
 ul{
@@ -201,9 +207,11 @@ ul{
     color: #000000;
 }
 label{
-    font-size: 12px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    padding: 1px;
+    font-family: Helvetica, Arial, sans-serif ;
     color: black;
+    font-weight: 100;
 }
 #cats a:link, #sp a:link, #ship a:link, #mats a:link, #colors a:link, #personalize a:link, #occasions a:link, #holidays a:link,#location a:link, #prices a:link, #ordering a:link, #shipped a:link{
     text-decoration: none;
@@ -215,8 +223,9 @@ label{
     align-items: flex-start;
     cursor: pointer;
 }
-#cata > li{
+#cata li{
     align-items: center;
+    font-size: 15px;
 }
 
 #plus a:link{
@@ -224,16 +233,22 @@ label{
 }
 h5{
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif ;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2px 0;
 }
 #low,#high{
     width: 50px;
     height: 30px;
     border-radius: 4px;   
+    border: 1px solid #dedede;
 }
-input{
-    border: 2px solid grey;
-    align-content: center;
+#low:hover, #high:hover{
+    border: black 1px solid;
+    transition: 0.5s ease-in-out border;
 }
+
 label{
     align-content: center;
 }
@@ -243,28 +258,43 @@ label{
     height: 30px;
     background: none;
 }
-
+#shipbar li:hover{
+    border: solid 2px black;
+}
 #location{
-    width: 150px;
+    display:flex;
+    height:30px;
+    border-radius: 4px;
 }
-#loco:hover{
+#location:hover{
+    border:1px solid black;
+}
+
+#cus:hover{
     text-decoration: none;
-}
-.cus:hover{
-    text-decoration: underline;
 }
 .chevron{
     display: inherit;
 }
+input[type=checked]{
+    zoom: 1.4;
+    outline: 3px solid grey;
+}
+ul #shipped{
+    text-decoration: none;
+}
+#shipbar:hover{
+    border: 1px solid black;
+}
 
+/* ///////// */
 /* MAIN BODY */
 /* ///////// */
-/* //////// */
 
 main{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
-    gap: 10px;
+    gap: 15px;
 }
 .products{
     cursor: pointer;
@@ -272,7 +302,6 @@ main{
 }
 .products img{
     width: 100%;
-    
 }
 #allproducts:hover{
     text-decoration: none;
@@ -308,9 +337,9 @@ main{
     position: relative;
    
 }
-.productlist > li > div > img{
+.productlist .javaimg{
     width: 250px;
-    height: 250px;
+    height: 225px;
     display: flex;
     flex-direction: row;
    
@@ -320,12 +349,12 @@ main{
     border:none;
 }
 #fullheart:hover #heart{
-    display: block;
+    display: block; 
 }
 .productlist #heart{
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 25px;
     background: none;
     display: none;
 }
@@ -335,6 +364,180 @@ main{
 li #evenmore .specific:hover{
     text-decoration: none !important;
 }
-#abovegrid{
-    display:flex;
+.rating{
+    width:105px;
+    height: 20px;
+    background: url(./assets/oZ9Id.png);
+}
+.rate{
+    width:105px;
+    height:20px;
+    background: url(./assets/oZ9Id.png);
+    background-position: 0px -20px;
+    display: block;
+
+}
+.javaimg::after{
+    content: "";
+    z-index: -1;
+    box-shadow: 0px 10px 20px 10px #5b5b5b;
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* DROP DOWN UNDER SEARCH BAR */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.jewelerydropdown #chevy{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+.jewelerydropdown{
+    float: left;
+    overflow: hidden;
+    align-content: center;
+    translate: 2s all;
+}
+
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 860px;
+    padding: 12px 16px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+    z-index: 1;
+}
+
+.jewelerydropdown:hover .dropcontent{
+    display: block;
+}
+.dropcontent a {
+    color:black;
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 375px;
+}
+.jewelerydropdown:hover .jewlery{
+    background-color: white;
+}
+.dropcontent a:hover{
+    background-color: #e7e7e7;
+}
+.dropcontent .dbJewlery{
+    font-weight: 600;
+}
+.dropcontent .dbJewlery a{
+    font-weight: 100;
+}
+
+/* //////////////////////// */
+/* Inside Jewlery Drop Down */
+/* //////////////////////// */
+
+.accsub{
+    font-size: 13px;
+    font-weight: 200;
+}
+.accheads{
+    font-size:17px;
+    padding: 10px 0px;
+    margin:  0 0 4px 0;
+}
+#necks, #rings, #bags, #sories, #earring{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 12px 16px;
+    z-index: 1;
+}
+#accflex{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    
+}
+
+#acccatagories:hover #sories{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 375px;
+    top:15px;
+}
+#sories a{
+    color:black;
+    float: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#bagstab:hover #bags{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 375px;
+    top:15px;
+}
+#bags a{
+    color:black;
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#neck:hover #necks{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 375px;
+    top:15px;
+}
+#necks a{
+    color:black;
+    float: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#ring:hover #rings{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 375px;
+    top:15px;
+}
+#rings a{
+    color:black;
+    float: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+#earring:hover #earrings{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 375px;
+    top:15px;
+}
+#earrings a{
+    color:black;
+    float: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
